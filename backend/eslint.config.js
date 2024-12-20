@@ -12,7 +12,6 @@ export default [
       "__tests__/*",
       "*/config/*",
       "*/db/**/*",
-      "*/models/*",
       ".sequelizerc",
       "*config.js"
     ],
