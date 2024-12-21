@@ -1,23 +1,25 @@
 export default {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": process.env.DEV_DB_USER,
+    "password": process.env.DEV_DB_PASS,
+    "database": process.env.DEV_DB_NAME,
+    "host": process.env.DEV_DB_HOST,
+    "dialect": "postgres"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": process.env.TEST_DB_USER,
+    "password": process.env.TEST_DB_PASS,
+    "database": process.env.TEST_DB_NAME,
+    "host": process.env.TEST_DB_HOST,
+    "dialect": "postgres",
+    "logging": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": process.env.PROD_DB_USER,
+    "password": process.env.PROD_DB_PASS,
+    "database": process.env.PROD_DB_NAME,
+    "host": process.env.PROD_DB_HOST,
+    "dialect": "postgres",
+    "logging": false
   }
 }
