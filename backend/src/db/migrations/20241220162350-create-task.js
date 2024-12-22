@@ -12,14 +12,14 @@ module.exports = {
       task: {
         type: Sequelize.STRING
       },
+      phase: {
+        type: Sequelize.INTEGER
+      },
       user_id: {
         type: Sequelize.UUID
       },
       board_id: {
         type: Sequelize.UUID
-      },
-      phase_id: {
-        type: Sequelize.INTEGER
       },
       created_at: {
         allowNull: false,
